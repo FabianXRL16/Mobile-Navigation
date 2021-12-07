@@ -93,13 +93,14 @@ body {
   border-radius: 50%;
   border: 6px solid var(--bg-body);
   box-sizing: border-box;
+  transition: .3s;
 }
 
 .indicator::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: -15px;
+  left: -14.2px;
   width: 10px;
   height: 10px;
   background-color: var(--white);
@@ -111,10 +112,20 @@ body {
   content: "";
   position: absolute;
   top: 50%;
-  right: -14.2px;
+  right: -14.5px;
   width: 10px;
   height: 10px;
   background-color: var(--white);
   border-radius: 100% 0 0 0;
   box-shadow: -1px -5px 0 0 var(--bg-body);
+}
+
+.nav ul li:nth-child(1).active ~ .indicator{
+    transform: translateX(calc(70px*0));
+}
+.nav ul li:nth-child(2).active ~ .indicator{
+    transform: translateX(calc(70px*1));
+}
+.nav ul li:nth-child(3).active ~ .indicator{
+    transform: translateX(calc(70px*2));
 }
