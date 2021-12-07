@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;500&display=swap");
 
 :root {
   font-family: "Nunito", sans-serif;
@@ -29,29 +29,48 @@ body {
   align-items: center;
   border-radius: 35px;
 }
-.nav ul{
-    width: 300px;
-    display: flex;
-    list-style: none;
-    padding: 0;
+.nav ul {
+  width: 300px;
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 
-.nav ul li{
-    width: 100px;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+.nav ul li {
+  width: 100px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.nav ul li .icon{
-    color: var(--bg-deactivated);
-    font-size: 20px;
+.nav ul li .icon {
+  color: var(--bg-deactivated);
+  font-size: 20px;
+  transition: 0.3s;
+  font-weight: 200;
 }
 
-.nav ul li .text{
-    font-size: 12px;
-    color: var(--bg-deactivated);
+.nav ul li:hover .icon {
+  color: var(--bg-active);
+  transition: 0.3s;
+  font-weight: 500;
+  transform: translateY(-25px);
 }
+
+.nav ul li .text {
+  font-size: 12px;
+  color: var(--bg-deactivated);
+  font-weight: 200;
+  transition: 0.3s;
+  transform: scale(.9);
+}
+
+.nav ul li:hover .text {
+    color: var(--bg-active);
+    transition: 0.3s;
+    font-weight: 500;
+    transform: scale(1.1);
+  }
