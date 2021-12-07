@@ -1,0 +1,16 @@
+{
+  "name": "navigator",
+  "version": "1.0.0",
+  "description": "Magic Navigation Menu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Nav",
+    "Navbar",
+    "Menu"
+  ],
+  "author": "Fabian Pacherres",
+  "license": "MIT"
+}
